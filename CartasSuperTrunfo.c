@@ -9,7 +9,8 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    char estado, estado2;
+    char estado;
+    char estado2[2];
     char codigoCarta[4], codigoCarta2[4];
     char nomeCidade[20], nomeCidade2[20];
     int populacao,populacao2, numPontosTuristicos, numPontosTuristicos2;
@@ -48,7 +49,7 @@ int main() {
     printf("Fim da primeira carta!\n");
     
     printf("Informe o segundo Estado:\n");
-    scanf("%c", &estado2);
+    scanf("%s", &estado2);
 
     printf("Informe o código da segunda carta:\n");
     scanf("%s",&codigoCarta2);
@@ -73,28 +74,28 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    printf("|----------------------------|");
+    printf("|----------------------------|\n");
     
     printf("Carta 1\n");
     printf("Estado: %c\n", estado);
     printf("Código: %s\n", codigoCarta);
     printf("Nome da cidade: %s\n", nomeCidade);
-    printf("População %d\n", populacao);
-    printf("Área da cidade: %.2f Quilometros Quadrados\n", area);
+    printf("População: %d\n", populacao);
+    printf("Área da cidade: %.2f Quilômetros Quadrados\n", area);
     printf("PIB: %.2f Bilhões de reais\n", pib);
     printf("Nº de pontos turísticos: %d\n", numPontosTuristicos);
 
-    printf("|----------------------------|");
+    printf("|----------------------------|\n");
     
     printf("Carta 2\n");
-    printf("Estado: %c\n", estado2);
+    printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigoCarta2);
     printf("Nome da cidade: %s\n", nomeCidade2);
-    printf("População %d\n", populacao2);
-    printf("Área da cidade: %.2f Quilometros Quadrados\n", area2);
+    printf("População: %d\n", populacao2);
+    printf("Área da cidade: %.2f Quilômetros Quadrados\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
     printf("Nº de pontos turísticos: %d\n", numPontosTuristicos2);
-    printf("|----------------------------|");
+    printf("|----------------------------|\n");
     
     return 0;
 }

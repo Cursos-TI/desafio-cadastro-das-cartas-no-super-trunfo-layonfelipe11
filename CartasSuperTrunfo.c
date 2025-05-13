@@ -2,15 +2,13 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    char estado;
-    char estado2[2];
+    
+    // Declaração das variáveis estado, código da carta, nome da Cidade, população, área, PIB, número de pontos turísticos.
+    
+    char estado, estado2;
     char codigoCarta[4], codigoCarta2[4];
     char nomeCidade[20], nomeCidade2[20];
     int populacao,populacao2, numPontosTuristicos, numPontosTuristicos2;
@@ -18,12 +16,11 @@ int main() {
 
     
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    // Cadastrando as Cartas
+    // O código abaixo solicita ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     printf("Informe o Estado:\n");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
 
     printf("Informe o código da carta:\n");
     scanf("%s",&codigoCarta);
@@ -49,7 +46,7 @@ int main() {
     printf("Fim da primeira carta!\n");
     
     printf("Informe o segundo Estado:\n");
-    scanf("%s", &estado2);
+    scanf(" %c", &estado2);
 
     printf("Informe o código da segunda carta:\n");
     scanf("%s",&codigoCarta2);
@@ -71,9 +68,9 @@ int main() {
     
     printf("Informe o nº de pontos turísticos da segunda cidade:\n");
     scanf("%d", &numPontosTuristicos2);
+    
     // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
     printf("|----------------------------|\n");
     
     printf("Carta 1\n");
@@ -88,7 +85,7 @@ int main() {
     printf("|----------------------------|\n");
     
     printf("Carta 2\n");
-    printf("Estado: %s\n", estado2);
+    printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigoCarta2);
     printf("Nome da cidade: %s\n", nomeCidade2);
     printf("População: %d\n", populacao2);
